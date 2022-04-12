@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colorPallet } from "../../styles/pallet";
 
 export const ContainerNav = styled.div`
   display: flex;
@@ -8,11 +7,11 @@ export const ContainerNav = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: ${colorPallet.primary};
+  background-color: ${({ theme }) => theme.primary};
 `;
 
 export const Ancor = styled.a`
-  color: ${colorPallet.primaryFontColor};
+  color: ${({ theme }) => theme.primaryFontColor};
   padding: 6px;
   height: 100%;
   width: 64%;
@@ -22,7 +21,7 @@ export const Ancor = styled.a`
   justify-content: center;
 
   &:hover {
-    background-color: ${colorPallet.secondary};
+    background-color: ${({ theme }) => theme.secondary};
   }
 `;
 export const ContainerLink = styled.div`

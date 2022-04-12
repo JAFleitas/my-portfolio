@@ -1,6 +1,8 @@
+import { PropsNav } from "../../models/navProps";
+import ButtonChangeTheme from "../buttonChangeTheme/buttonChange";
 import { Ancor, ContainerLink, ContainerNav } from "./styles";
 
-export default function Nav() {
+export default function Nav({ changeTheme }: PropsNav) {
   return (
     <ContainerNav>
       <ContainerLink>
@@ -15,9 +17,7 @@ export default function Nav() {
       <ContainerLink>
         <Ancor href="#">About Me</Ancor>
       </ContainerLink>
-      <div>
-        <button>mode</button>
-      </div>
+      <ButtonChangeTheme changeTheme={changeTheme} />
     </ContainerNav>
   );
 }

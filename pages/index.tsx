@@ -1,10 +1,10 @@
-import Nav from "../components/nav/nav";
+import Footer from "../components/footer/footer";
 
 function Home(): JSX.Element {
   return (
     <div>
-      <Nav />
       <h1>probando next</h1>
+      <Footer />
     </div>
   );
 }
