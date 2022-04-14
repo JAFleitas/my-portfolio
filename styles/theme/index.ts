@@ -1,7 +1,7 @@
-import { ColorPallet } from "../../models/colorPallet";
+import { DefaultTheme } from "styled-components";
 import { Theme } from "../../models/theme";
 
-const darkTheme: ColorPallet = {
+const darkTheme: DefaultTheme = {
   primary: "#17266b",
   secondary: "#141430",
   background: "#141430",
@@ -9,7 +9,7 @@ const darkTheme: ColorPallet = {
   secondaryFontColor: "#9583ed",
   transitionTime: "0.5s",
 };
-const lightTheme: ColorPallet = {
+const lightTheme: DefaultTheme = {
   primary: "#0a0a0a",
   secondary: "#fcfcfc",
   background: "#fff",
