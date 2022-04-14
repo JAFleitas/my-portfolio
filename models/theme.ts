@@ -1,6 +1,6 @@
-import { ColorPallet } from "./colorPallet";
+import { DefaultTheme } from "styled-components";
 
 export interface Theme {
-  [light: string]: ColorPallet;
-  dark: ColorPallet;
+  [light: string]: DefaultTheme;
+  dark: DefaultTheme;
 }
