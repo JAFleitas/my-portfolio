@@ -1,8 +1,7 @@
-import styled from "styled-components";
-import { ColorPallet } from "../../models/colorPallet";
+import styled, { DefaultTheme } from "styled-components";
 interface PropsContainerButton {
   position: boolean;
-  theme: ColorPallet;
+  theme: DefaultTheme;
 }
 export const ContainerButton = styled.div`
   display: flex;
