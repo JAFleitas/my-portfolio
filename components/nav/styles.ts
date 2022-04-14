@@ -9,23 +9,28 @@ export const ContainerNav = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.primary};
 `;
-
+interface PropsAncor {
+  selected?: boolean;
+}
 export const Ancor = styled.a`
   color: ${({ theme }) => theme.primaryFontColor};
   padding: 6px;
   height: 100%;
-  width: 64%;
+  width: 90%;
   display: flex;
   align-items: center;
   padding-top: 2px;
   justify-content: center;
+  font-weight: 800;
+  text-decoration: ${(props: PropsAncor) =>
+    props.selected ? "underline" : "none"};
 
   &:hover {
-    background-color: ${({ theme }) => theme.secondary};
+    text-decoration: underline;
   }
 `;
 export const ContainerLink = styled.div`
-  width: 20%;
+  width: 14%;
   height: 100%;
   display: flex;
   align-items: center;

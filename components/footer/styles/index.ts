@@ -6,4 +6,8 @@ export const ContainerFooter = styled.div`
   height: 200px;
   flex-direction: row;
   justify-content: space-around;
+  background-color: ${({ theme }) => theme.primary};
+  position: absolute;
+  bottom: 0;
+  align-items: center;
 `;

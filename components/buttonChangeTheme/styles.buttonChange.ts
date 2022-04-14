@@ -1,24 +1,37 @@
 import styled from "styled-components";
+import { ColorPallet } from "../../models/colorPallet";
 interface PropsContainerButton {
   position: boolean;
+  theme: ColorPallet;
 }
 export const ContainerButton = styled.div`
   display: flex;
   flex-direction: row;
-  width: 36px;
+  width: 40px;
   height: 20px;
-  background-color: #fff;
   border-radius: 20px;
   align-items: center;
-  justify-content: left;
 
   cursor: pointer;
 `;
 
-export const ButtonSwich = styled.button`
-  width: 20px;
-  height: 20px;
-  background-color: #000;
+export const ButtonSwich = styled.div`
+  display: flex;
+  width: 28px;
+  height: 28px;
   border: none;
   border-radius: 50%;
+  background-color: #fff;
+  font-size: 28px;
+  color: ${(props: PropsContainerButton) =>
+    props.position ? props.theme.primary : props.theme.secondaryFontColor};
+  transition: all 0.4s;
+
+  :hover {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+  }
 `;
+
+// #7a70fc

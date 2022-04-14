@@ -4,4 +4,6 @@ export interface ColorPallet {
   background: string;
   primaryFontColor: string;
   secondaryFontColor: string;
+
+  transitionTime: string;
 }
