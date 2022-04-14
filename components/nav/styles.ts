@@ -13,7 +13,8 @@ interface PropsAncor {
   selected?: boolean;
 }
 export const Ancor = styled.a`
-  color: ${({ theme }) => theme.primaryFontColor};
+  color: ${({ theme, selected }) =>
+    selected ? theme.secondaryFontColor : theme.primaryFontColor};
   padding: 6px;
   height: 100%;
   width: 90%;
@@ -26,7 +27,7 @@ export const Ancor = styled.a`
     props.selected ? "underline" : "none"};
 
   &:hover {
-    text-decoration: underline;
+    color: ${({ theme }) => theme.secondaryFontColor};
   }
 `;
 export const ContainerLink = styled.div`

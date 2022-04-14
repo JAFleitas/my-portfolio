@@ -1,12 +1,7 @@
-import Footer from "../components/footer/footer";
-
-function Home(): JSX.Element {
+export default function Home(): JSX.Element {
   return (
     <div>
-      <h1>probando next</h1>
-      <Footer />
+      <h1></h1>
     </div>
   );
 }
-
-export default Home;

@@ -9,15 +9,17 @@ export default function Nav({ changeTheme }: PropsNav) {
   return (
     <ContainerNav>
       <ContainerLink>
-        <Ancor href="#" onClick={() => setSelected(0)}>
-          Logo
+        <Ancor
+          selected={selected === 0 ? true : false}
+          onClick={() => setSelected(0)}
+        >
+          Home
         </Ancor>
       </ContainerLink>
       <ContainerLink>
         <Ancor
           selected={selected === 1 ? true : false}
           onClick={() => setSelected(1)}
-          href="#"
         >
           My Proyects
         </Ancor>
@@ -26,7 +28,6 @@ export default function Nav({ changeTheme }: PropsNav) {
         <Ancor
           selected={selected === 2 ? true : false}
           onClick={() => setSelected(2)}
-          href="#"
         >
           Contact
         </Ancor>
@@ -35,7 +36,6 @@ export default function Nav({ changeTheme }: PropsNav) {
         <Ancor
           selected={selected === 3 ? true : false}
           onClick={() => setSelected(3)}
-          href="#"
         >
           About Me
         </Ancor>

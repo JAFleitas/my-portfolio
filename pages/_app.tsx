@@ -3,8 +3,9 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../styles/theme";
 import { useTheme } from "../hooks/useTheme";
-import Nav from "../components/nav/nav";
 import { GlobalStyles } from "../styles/globalStyles/globalStyles";
+import Nav from "../components/nav/nav";
+import Footer from "../components/footer/footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { mode, changeTheme } = useTheme();
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyles />
       <Nav changeTheme={changeTheme} />
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   );
 }

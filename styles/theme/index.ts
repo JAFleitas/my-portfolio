@@ -6,15 +6,15 @@ const darkTheme: ColorPallet = {
   secondary: "#141430",
   background: "#141430",
   primaryFontColor: "#7fffffd8",
-  secondaryFontColor: "#0a0a0a",
-  transitionTime: "1s",
+  secondaryFontColor: "#9583ed",
+  transitionTime: "0.5s",
 };
 const lightTheme: ColorPallet = {
   primary: "#0a0a0a",
   secondary: "#fcfcfc",
   background: "#fff",
   primaryFontColor: "#fff",
-  secondaryFontColor: "#7fffffd8;",
-  transitionTime: "1s",
+  secondaryFontColor: "#22d8d8;",
+  transitionTime: "0.5s",
 };
 export const theme: Theme = { light: lightTheme, dark: darkTheme };
