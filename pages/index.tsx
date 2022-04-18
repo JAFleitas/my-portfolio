@@ -1,7 +1,10 @@
+import Presentation from "../components/presentation/presentation";
+import { Container } from "../styles/home/home.styles";
+
 export default function Home(): JSX.Element {
   return (
-    <div>
-      <h1></h1>
-    </div>
+    <Container>
+      <Presentation />
+    </Container>
   );
 }
