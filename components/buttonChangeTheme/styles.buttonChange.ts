@@ -1,6 +1,6 @@
 import styled, { DefaultTheme } from "styled-components";
 interface PropsContainerButton {
-  position: boolean;
+  position?: string | null;
   theme: DefaultTheme;
 }
 export const ContainerButton = styled.div`
@@ -23,7 +23,9 @@ export const ButtonSwich = styled.div`
   background-color: #fff;
   font-size: 28px;
   color: ${(props: PropsContainerButton) =>
-    props.position ? props.theme.primary : props.theme.secondaryFontColor};
+    props.position === "dark"
+      ? props.theme.primary
+      : props.theme.secondaryFontColor};
   transition: all 0.4s;
 
   :hover {

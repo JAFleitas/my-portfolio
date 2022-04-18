@@ -10,9 +10,9 @@ import Footer from "../components/footer/footer";
 function MyApp({ Component, pageProps }: AppProps) {
   const { mode, changeTheme } = useTheme();
   return (
-    <ThemeProvider theme={theme[mode]}>
+    <ThemeProvider theme={theme[mode!]}>
       <GlobalStyles />
-      <Nav changeTheme={changeTheme} />
+      <Nav changeTheme={changeTheme} mode={mode} />
       <Component {...pageProps} />
       <Footer />
     </ThemeProvider>

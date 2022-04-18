@@ -4,7 +4,7 @@ import { PropsNav } from "../../models/navProps";
 import ButtonChangeTheme from "../buttonChangeTheme/buttonChange";
 import { Ancor, ContainerLink, ContainerNav } from "./styles";
 
-export default function Nav({ changeTheme }: PropsNav) {
+export default function Nav({ changeTheme, mode }: PropsNav) {
   const [selected, setSelected] = useState<number>(0);
 
   return (
@@ -49,7 +49,7 @@ export default function Nav({ changeTheme }: PropsNav) {
           </Ancor>
         </Link>
       </ContainerLink>
-      <ButtonChangeTheme changeTheme={changeTheme} />
+      <ButtonChangeTheme changeTheme={changeTheme} mode={mode} />
     </ContainerNav>
   );
 }

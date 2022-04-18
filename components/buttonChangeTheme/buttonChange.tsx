@@ -5,16 +5,15 @@ import { ButtonSwich, ContainerButton } from "./styles.buttonChange";
 
 export default function ButtonChangeTheme({
   changeTheme,
+  mode,
 }: PropsNav): JSX.Element {
-  const [position, setPosition] = useState<boolean>(false);
   const changePosition = () => {
-    setPosition(!position);
     changeTheme();
   };
   return (
     <ContainerButton onClick={changePosition}>
-      <ButtonSwich position={position}>
-        {position ? <MdDarkMode /> : <MdOutlineLightMode />}
+      <ButtonSwich position={mode}>
+        {mode === "dark" ? <MdDarkMode /> : <MdOutlineLightMode />}
       </ButtonSwich>
     </ContainerButton>
   );
