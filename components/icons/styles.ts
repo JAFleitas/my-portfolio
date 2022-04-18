@@ -9,8 +9,17 @@ export const ContainerIcon = styled.div`
   color: ${({ theme }) => theme.primaryFontColor};
   cursor: pointer;
   transition: all 0.5s;
-  :hover {
+  &:hover {
     color: ${({ theme }) => theme.secondaryFontColor};
     font-size: 33px;
+  }
+  a {
+    color: ${({ theme }) => theme.primaryFontColor};
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      color: ${({ theme }) => theme.secondaryFontColor};
+      font-size: 33px;
+    }
   }
 `;

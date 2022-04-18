@@ -7,7 +7,7 @@ export const ContainerFooter = styled.div`
   flex-direction: row;
   justify-content: space-around;
   background-color: ${({ theme }) => theme.primary};
-  position: absolute;
+  position: relative;
   bottom: 0;
   align-items: center;
 `;

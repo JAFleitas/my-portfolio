@@ -4,7 +4,7 @@ import { Theme } from "../../models/theme";
 const darkTheme: DefaultTheme = {
   primary: "#17266b",
   secondary: "#141430",
-  background: "#141430",
+  background: "#0c0c22",
   primaryFontColor: "#7fffffd8",
   secondaryFontColor: "#9583ed",
   transitionTime: "0.5s",
