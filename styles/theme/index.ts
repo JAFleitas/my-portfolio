@@ -11,7 +11,7 @@ const darkTheme: DefaultTheme = {
 };
 const lightTheme: DefaultTheme = {
   primary: "#0a0a0a",
-  secondary: "#fcfcfc",
+  secondary: "#f5f5f5",
   background: "#fff",
   primaryFontColor: "#fff",
   secondaryFontColor: "#22d8d8;",

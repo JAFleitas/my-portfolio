@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   color: ${({ theme }) => theme.secondaryFontColor};
-  width: 80%;
+  width: 70%;
   background-color: ${({ theme }) => theme.background};
   height: 100vh;
   @media screen and (max-width: 678px) {
