@@ -8,6 +8,8 @@ export const ContainerNav = styled.div`
   justify-content: space-around;
   align-items: center;
   background-color: ${({ theme }) => theme.primary};
+  position: fixed;
+  z-index: 100;
 `;
 interface PropsAncor {
   selected?: boolean;

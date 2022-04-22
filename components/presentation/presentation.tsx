@@ -25,7 +25,7 @@ export default function Presentation(): JSX.Element {
       </PhotoContainer>
 
       <ContainerProfession>
-        <h2>From-End Developer | Full-Stack Developer </h2>
+        <h2>Front-End Developer | Full-Stack Developer </h2>
       </ContainerProfession>
     </Container>
   );
