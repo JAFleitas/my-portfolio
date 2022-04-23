@@ -6,6 +6,7 @@ import { useTheme } from "../hooks/useTheme";
 import { GlobalStyles } from "../styles/globalStyles/globalStyles";
 import Nav from "../components/nav/nav";
 import Footer from "../components/footer/footer";
+import { Container } from "../styles/home/home.styles";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { mode, changeTheme } = useTheme();
@@ -13,7 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme[mode!]}>
       <GlobalStyles />
       <Nav changeTheme={changeTheme} mode={mode} />
-      <Component {...pageProps} />
+      <Container>
+        <Component {...pageProps} />
+      </Container>
       <Footer />
     </ThemeProvider>
   );

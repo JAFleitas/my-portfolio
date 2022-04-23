@@ -25,6 +25,7 @@ export const Ancor = styled.a`
   padding-top: 2px;
   justify-content: center;
   font-weight: 800;
+  transition: all 0.5s;
   text-decoration: ${(props: PropsAncor) =>
     props.selected ? "underline" : "none"};
 
