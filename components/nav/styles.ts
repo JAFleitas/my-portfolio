@@ -9,7 +9,7 @@ export const ContainerNav = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.primary};
   position: fixed;
-  z-index: 100;
+  z-index: 500;
 `;
 interface PropsAncor {
   selected?: boolean;

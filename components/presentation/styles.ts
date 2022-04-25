@@ -9,6 +9,7 @@ export const Container = styled.div`
   width: 70%;
   height: 100vh;
   margin-top: 140px;
+
   @media screen and (max-width: 678px) {
     width: 100%;
   }
@@ -22,6 +23,7 @@ export const PhotoContainer = styled.div`
 export const ContainerName = styled.div`
   h2 {
     font-weight: 900;
+    font-size: 2rem;
   }
 `;
 
@@ -30,6 +32,7 @@ export const ContainerProfession = styled.div`
   flex-direction: row;
   margin-bottom: 24px;
   h3 {
+    font-size: 1.4rem;
     text-align: center;
     color: ${({ theme }) => theme.secondaryFontColor};
   }
@@ -38,15 +41,43 @@ export const ContainerProfession = styled.div`
 export const CardContainer = styled.div`
   display: flex;
   width: 90%;
+  max-width: 600px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 40px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 5px 10px 38px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px 10px 38px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 10px 38px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 10px 38px 0px ${({ theme }) => theme.primary};
+  -webkit-box-shadow: 5px 10px 38px 0px ${({ theme }) => theme.primary};
+  -moz-box-shadow: 5px 10px 38px 0px ${({ theme }) => theme.primary};
+  @keyframes rotate {
+    0% {
+      transform: rotate(0turn);
+    }
+    25% {
+      transform: rotate(-0.01turn);
+    }
+    50% {
+      transform: rotate(0turn);
+    }
+    100% {
+      transform: rotate(0.01turn);
+    }
+  }
+  position: relative;
+  left: 1000px;
+  @keyframes visible {
+    from {
+      left: 1000px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  animation: visible 1s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 `;
 
 export const ButtonCv = styled.div`
@@ -61,4 +92,10 @@ export const ButtonCv = styled.div`
     background-color: ${({ theme }) => theme.primary + "dd"};
     color: ${({ theme }) => theme.secondaryFontColor + "dd"};
   }
+`;
+export const WrapperCard = styled.div`
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 `;

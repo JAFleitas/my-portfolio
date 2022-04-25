@@ -25,7 +25,7 @@ export default function Nav({ changeTheme, mode }: PropsNav) {
             selected={selected === 1 ? true : false}
             onClick={() => setSelected(1)}
           >
-            My Proyects
+            Proyects
           </Ancor>
         </Link>
       </ContainerLink>
