@@ -1,4 +1,4 @@
-const hero = document.getElementById("icons");
+/* const hero = document.getElementById("icons");
 const svgs = Array.from(hero.querySelectorAll("svg"));
 
 const w = window.innerWidth;
@@ -32,6 +32,8 @@ function animateBackgroundIcons() {
 
 setInterval(animateBackgroundIcons, 1000);
 animateBackgroundIcons();
-
+ */
 // colores
 // amarillo #fde047
+
+export {};
