@@ -1,5 +1,4 @@
-import styled from "styled-components"
-
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -12,7 +11,6 @@ export const Container = styled.div`
 export const ChildrenContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
   color: #d0d0d0;
 `;
-  
