@@ -32,7 +32,8 @@ function animateBackgroundIcons() {
 
 setInterval(animateBackgroundIcons, 1000);
 animateBackgroundIcons();
- */
+*/
+
 // colores
 // amarillo #fde047
 
