@@ -1,20 +1,16 @@
 import { CustomLink } from "../CustomLink";
-import { Container, Wrapper, HomeLink, Nav } from "./styles";
-const pathRoutes = ["proyects", "certifications", "about"];
+import { Container, Nav } from "./styles";
+const pathRoutes = ["about", "proyects", "certifications"];
 
 export const Navbar = () => {
   return (
     <Container>
-      <Wrapper>
-        <HomeLink>
-          <CustomLink path="" content="Home" />
-        </HomeLink>
-        <Nav>
-          {pathRoutes.map((path) => (
-            <CustomLink content={path} key={path} path={path} />
-          ))}
-        </Nav>
-      </Wrapper>
+      <Nav>
+        <CustomLink path="" content="Home" />
+        {pathRoutes.map((path) => (
+          <CustomLink content={path} key={path} path={path} />
+        ))}
+      </Nav>
     </Container>
   );
 };

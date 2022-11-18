@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MOBILE, TABLET } from "../../../helpers/constants";
 
 export const Container = styled.div`
   display: flex;
@@ -8,16 +9,19 @@ export const Container = styled.div`
   color: #d0d0d0;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  z-index: 100;
 `;
-export const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-`;
-
-export const HomeLink = styled.div``;
 
 export const Nav = styled.div`
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  padding: 40px;
+  @media ${MOBILE} {
+    width: 100%;
+  }
+  @media ${TABLET} {
+    width: 80%;
+  }
 `;
