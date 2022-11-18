@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { MOBILE } from "../../../helpers/constants";
 
 const borderMove = keyframes`
   /* 0% {
@@ -76,7 +77,8 @@ const borderMove = keyframes`
 `;
 
 export const Container = styled.div`
-  width: 304px;
+  width: 500px;
+
   border-width: 4px;
   border-style: solid;
   border-image: linear-gradient(
@@ -93,4 +95,7 @@ export const Container = styled.div`
   border-radius: 0.25rem;
   height: max-content;
   animation: ${borderMove} 6s linear infinite;
+  @media ${MOBILE} {
+    width: 100%;
+  }
 `;

@@ -5,7 +5,6 @@ import { ContainerProfile } from "./style";
 export const Profile = () => {
   return (
     <ContainerProfile>
-      <ImageProfile />
       <DescriptionProfile />
     </ContainerProfile>
   );

@@ -6,13 +6,14 @@ interface Props {
 
 export const PrimaryButton: FC<Props> = ({ content }) => {
   return (
-    <div>
+    <>
       <ButtonStyled>{content}</ButtonStyled>
-    </div>
+    </>
   );
 };
 
 import styled from "styled-components";
+import { MOBILE, TABLET } from "../../../helpers/constants";
 const ButtonStyled = styled.button`
   display: flex;
   min-width: 200px;
@@ -29,5 +30,11 @@ const ButtonStyled = styled.button`
     border: 4px solid #0f89e3;
     color: #fff;
     background: #0d1117;
+  }
+
+  @media ${TABLET} {
+  }
+  @media ${MOBILE} {
+    width: 100%;
   }
 `;

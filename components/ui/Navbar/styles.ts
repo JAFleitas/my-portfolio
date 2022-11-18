@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 60%;
 `;
 
 export const HomeLink = styled.div``;

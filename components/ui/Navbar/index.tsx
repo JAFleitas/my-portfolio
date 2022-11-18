@@ -7,11 +7,11 @@ export const Navbar = () => {
     <Container>
       <Wrapper>
         <HomeLink>
-          <CustomLink path="Home" />
+          <CustomLink path="" content="Home" />
         </HomeLink>
         <Nav>
           {pathRoutes.map((path) => (
-            <CustomLink key={path} path={path} />
+            <CustomLink content={path} key={path} path={path} />
           ))}
         </Nav>
       </Wrapper>
