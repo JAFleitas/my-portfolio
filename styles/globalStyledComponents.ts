@@ -7,7 +7,7 @@ export const SubTitle = styled.h2`
   font-size: 4rem;
   display: flex;
   align-items: start;
-
+  padding-bottom: 80px;
   margin: 0;
   @media ${MOBILE} {
     font-size: 2.5rem;

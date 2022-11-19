@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { SubTitle } from "../../../styles/globalStyledComponents";
 import { ProjectSkeletor } from "../";
-import { TABLET } from "../../../helpers/constants";
+import { MOBILE, TABLET } from "../../../helpers/constants";
 
 export const ProjectContainer = () => {
   return (
@@ -16,20 +16,34 @@ export const ProjectContainer = () => {
   );
 };
 export const CardContainer = styled.div`
-  display: grid;
+  /* display: grid;
   margin-bottom: 40px;
   gap: 40px;
   width: 100%;
   justify-content: space-between;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px)); */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
   @media ${TABLET} {
     grid-column: 1/2;
     grid-row: 2/3;
-    justify-content: space-around;
+    justify-content: start;
+  }
+  @media ${MOBILE} {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    justify-content: center;
   }
 `;
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media ${MOBILE} {
+    align-items: center;
+  }
 `;

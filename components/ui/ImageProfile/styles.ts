@@ -1,22 +1,8 @@
 import styled, { keyframes } from "styled-components";
 import { MOBILE } from "../../../helpers/constants";
 
-const borderMove = keyframes`
-  /* 0% {
-      border-image: linear-gradient(to right, #ffffc2, #fff07b, #c3bd31, #fde047f0) 1;
-  }
-  25% {
-      border-image: linear-gradient(to bottom, #ffffc2, #fff07b, #c3bd31,#fde047f0) 1;
-  }
-  50% {
-      border-image: linear-gradient(to top, #ffffc2, #fff07b, #c3bd31, #fde047f0) 1;
-  }
-  75% {
-      border-image: linear-gradient(to left, #ffffc2, #fff07b, #c3bd31, #fde047f0) 1;
-  }
-  100% {
-      border-image: linear-gradient(to right, #ffffc2, #fff07b, #c3bd31, #fde047f0) 1;
-  } */
+export const borderMove = keyframes`
+ 
   0%{border-image: linear-gradient(
       to left,
       #a043ff,

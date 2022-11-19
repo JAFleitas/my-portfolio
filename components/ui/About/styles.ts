@@ -9,6 +9,9 @@ export const Container = styled.div`
   align-items: flex-start;
   gap: 20px;
   margin-bottom: 50px;
+  @media ${MOBILE} {
+    align-items: center;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -16,7 +19,7 @@ export const Paragraph = styled.p`
   font-size: 1.5rem;
   letter-spacing: 1px;
   font-weight: 500;
-  line-height: 0.8cm;
+  line-height: 1cm;
   color: #ccc;
   animation: ${fadeIn} 2s linear forwards;
 `;

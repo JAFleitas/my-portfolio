@@ -1,6 +1,11 @@
 import { useRef } from "react";
 import { InitialLayout } from "../components/layout/InitialLayout";
-import { Profile, About, ProjectContainer } from "../components/ui";
+import {
+  Profile,
+  About,
+  ProjectContainer,
+  Certificates,
+} from "../components/ui";
 
 const HomePage = () => {
   /* const prueba = useRef() as React.MutableRefObject<HTMLInputElement>; */
@@ -17,6 +22,7 @@ const HomePage = () => {
 
       <About />
       <ProjectContainer />
+      <Certificates />
     </InitialLayout>
   );
 };
