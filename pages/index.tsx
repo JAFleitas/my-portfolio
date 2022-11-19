@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { InitialLayout } from "../components/layout/InitialLayout";
-import { Profile, About } from "../components/ui";
+import { Profile, About, ProjectContainer } from "../components/ui";
 
 const HomePage = () => {
   /* const prueba = useRef() as React.MutableRefObject<HTMLInputElement>; */
@@ -16,6 +16,7 @@ const HomePage = () => {
       <Profile />
 
       <About />
+      <ProjectContainer />
     </InitialLayout>
   );
 };

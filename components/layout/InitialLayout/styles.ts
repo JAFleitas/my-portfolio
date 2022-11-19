@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MOBILE } from "../../../helpers/constants";
+import { MOBILE, TABLET } from "../../../helpers/constants";
 
 export const Container = styled.div`
   display: flex;
@@ -23,5 +23,8 @@ export const ChildrenContainer = styled.div`
   gap: 200px;
   @media ${MOBILE} {
     width: 90%;
+  }
+  @media ${TABLET} {
+    width: 80%;
   }
 `;
