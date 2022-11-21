@@ -7,15 +7,15 @@ import { ImageProfile } from "../ImageProfile";
 export const DescriptionProfile = () => {
   return (
     <Container>
-      <Title> Gonzalo Damian Fleitas</Title>
+      <Title id="profile"> Gonzalo Damian Fleitas</Title>
       <Profession>Jr. Frontend and Backend Developer</Profession>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <ImageProfile />
       </div>
       <SocialNetworkContainer>
-        <GitHubIcon />
         <Linkedin />
         <Twitter />
+        <GitHubIcon />
       </SocialNetworkContainer>
       <ContainerContactButton>
         <PrimaryButton content="Curriculum Vitae" />
@@ -28,6 +28,7 @@ import styled from "styled-components";
 import { MOBILE, TABLET } from "../../../helpers/constants";
 
 const Title = styled.h1`
+  padding-top: 80px;
   font-weight: 900;
   color: #fde047f0;
   font-size: 4rem;

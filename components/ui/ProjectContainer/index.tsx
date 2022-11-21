@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { SubTitle } from "../../../styles/globalStyledComponents";
-import { ProjectSkeletor } from "../";
+import { CardProject } from "../";
 import { MOBILE, TABLET } from "../../../helpers/constants";
 
 export const ProjectContainer = () => {
   return (
     <Container>
-      <SubTitle>Proyectos</SubTitle>
+      <SubTitle id="projects">Proyectos</SubTitle>
       <CardContainer>
         {[1, 2, 3, 4, 5, 6].map((e) => (
-          <ProjectSkeletor key={e} />
+          <CardProject key={e} />
         ))}
       </CardContainer>
     </Container>
@@ -43,7 +43,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  align-items: center;
   @media ${MOBILE} {
-    align-items: center;
   }
 `;

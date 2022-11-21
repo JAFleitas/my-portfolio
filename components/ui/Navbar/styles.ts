@@ -13,7 +13,7 @@ export const Container = styled.div`
   z-index: 100;
 `;
 
-export const Nav = styled.div`
+export const Nav = styled.ul`
   display: flex;
   justify-content: space-around;
   width: 60%;
@@ -23,5 +23,23 @@ export const Nav = styled.div`
   }
   @media ${TABLET} {
     width: 80%;
+  }
+`;
+
+interface Props {
+  isPressed?: boolean;
+}
+export const Item = styled.li<Props>`
+  text-transform: capitalize;
+  font-weight: 800;
+  color: ${(props) => (props.isPressed ? "#aaa" : "#ccc")};
+  list-style: none;
+  padding: 4px;
+  margin: 4px;
+  height: 30px;
+  cursor: pointer;
+  :hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
   }
 `;

@@ -1,17 +1,14 @@
 import styled from "styled-components";
-import { MOBILE, TABLET } from "../../../helpers/constants";
+import { MOBILE } from "../../../helpers/constants";
 import { fadeIn } from "../../../styles/globalStyledComponents";
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
-  margin-bottom: 50px;
-  @media ${MOBILE} {
-    align-items: center;
-  }
+  margin-bottom: 80px;
 `;
 
 export const Paragraph = styled.p`
@@ -22,4 +19,8 @@ export const Paragraph = styled.p`
   line-height: 1cm;
   color: #ccc;
   animation: ${fadeIn} 2s linear forwards;
+
+  @media ${MOBILE} {
+    align-items: center;
+  }
 `;

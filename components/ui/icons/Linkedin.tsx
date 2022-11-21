@@ -7,6 +7,7 @@ export const Linkedin = (props: SVGProps<SVGSVGElement>) => (
       href="https://www.linkedin.com/in/fleitas-gonzalo/"
       target="_blank"
       rel="noreferrer noopener"
+      title="LinkedIn"
     >
       <SvgStyled
         xmlns="http://www.w3.org/2000/svg"

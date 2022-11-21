@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MOBILE, TABLET } from "../../../helpers/constants";
 
-export const ProjectSkeletor = () => {
+export const CardProject = () => {
   return (
     <Container>
       <div>imagen</div>

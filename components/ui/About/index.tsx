@@ -10,7 +10,7 @@ export const About = () => {
   }, []);
   return (
     <Container>
-      <SubTitle>Sobre Mi</SubTitle>
+      <SubTitle id="about">Sobre Mi</SubTitle>
       {isVisible && (
         <Paragraph>
           Soy una persona que busca nuevos desafios y problemáticas que me

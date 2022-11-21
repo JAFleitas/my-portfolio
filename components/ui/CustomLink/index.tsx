@@ -6,8 +6,9 @@ import { useRouter } from "next/router";
 interface Props {
   path?: string;
   content: string;
+  onClick?: () => void;
 }
-export const CustomLink: FC<Props> = ({ path, content }) => {
+export const CustomLink: FC<Props> = ({ path, content, onClick }) => {
   const { asPath } = useRouter();
   const [isPressed, setIsPressed] = useState<boolean>(false);
   useEffect(() => {
@@ -19,7 +20,9 @@ export const CustomLink: FC<Props> = ({ path, content }) => {
   return (
     <Container>
       <NextLink href={`/${path}`} passHref>
-        <Ancor isPressed={isPressed}>{content}</Ancor>
+        <Ancor onClick={onClick} isPressed={isPressed}>
+          {content}
+        </Ancor>
       </NextLink>
     </Container>
   );

@@ -7,7 +7,9 @@ import { SubTitle } from "../../../styles/globalStyledComponents";
 export const Certificates = () => {
   return (
     <Container>
-      <SubTitle>Certificados</SubTitle>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <SubTitle id="certificates">Certificados</SubTitle>
+      </div>
       <CertificatesContainer>
         <ContainerImage>
           <a

@@ -63,7 +63,7 @@ export const borderMove = keyframes`
 `;
 
 export const Container = styled.div`
-  width: 500px;
+  width: 400px;
 
   border-width: 4px;
   border-style: solid;

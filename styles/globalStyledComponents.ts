@@ -3,12 +3,15 @@ import { MOBILE, TABLET } from "../helpers/constants";
 
 export const SubTitle = styled.h2`
   font-weight: 900;
-  color: #fde047f0;
+  color: #234ca7;
   font-size: 4rem;
   display: flex;
   align-items: start;
-  padding-bottom: 80px;
+  padding-bottom: 16px;
+  padding-top: 80px;
   margin: 0;
+  border-bottom: 0.4rem solid #234ca7;
+  margin-bottom: 60px;
   @media ${MOBILE} {
     font-size: 2.5rem;
     font-weight: 800;
