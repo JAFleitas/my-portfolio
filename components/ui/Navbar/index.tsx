@@ -13,11 +13,13 @@ export const Navbar = () => {
   let projects: any;
   let profile: any;
   let about: any;
+  let tecnologies: any;
   if (typeof window !== "undefined") {
     certificates = document.querySelector("#certificates");
     projects = document.querySelector("#projects");
     profile = document.querySelector("#profile");
     about = document.querySelector("#about");
+    tecnologies = document.querySelector("#tecnologies");
   }
   const [isVisible, setIsVisible] = useState(false);
   const showContactButton = () => {
@@ -44,7 +46,7 @@ export const Navbar = () => {
           </Item>
         </div>
         <ContactContainer isVisible={isVisible}>
-          <ContactButton>Contactame</ContactButton>
+          <ContactButton>Contáctame</ContactButton>
         </ContactContainer>
         <ContainerNav>
           <Item
@@ -56,11 +58,22 @@ export const Navbar = () => {
           </Item>
           <Item
             onClick={() =>
+              tecnologies?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            }
+          >
+            Tecnologías
+          </Item>
+          <Item
+            onClick={() =>
               projects?.scrollIntoView({ behavior: "smooth", block: "start" })
             }
           >
             Proyectos
           </Item>
+
           <Item
             onClick={() =>
               certificates?.scrollIntoView({

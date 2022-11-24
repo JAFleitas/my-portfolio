@@ -44,7 +44,7 @@ export const Header = styled.nav`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 800px;
 `;
 
 interface PropsContactButton {

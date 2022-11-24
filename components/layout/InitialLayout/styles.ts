@@ -19,6 +19,7 @@ export const ChildrenContainer = styled.main`
   display: flex;
   flex-direction: column;
   width: 60%;
+  max-width: 800px;
   color: #d0d0d0;
   margin-top: 80px;
   gap: 300px;
