@@ -19,7 +19,7 @@ export const DescriptionProfile = () => {
       </SocialNetworkContainer>
       <ContainerContactButton>
         <PrimaryButton content="Curriculum Vitae" />
-        <PrimaryButton content="Contact" />
+        <PrimaryButton content="Contactame" />
       </ContainerContactButton>
     </Container>
   );

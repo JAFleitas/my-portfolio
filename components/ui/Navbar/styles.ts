@@ -54,9 +54,12 @@ interface PropsContactButton {
 export const ContactContainer = styled.div<PropsContactButton>`
   border: 2px solid #0f89e3;
   border-radius: 6px;
-  box-shadow: 0 0 21px 0px #234ca7;
+  box-shadow: 0 0 17px 0px #234ca7;
 
   display: ${({ isVisible }) => (isVisible ? "inline-block" : "none")};
+  :hover {
+    box-shadow: 0 0 21px 0px #234ca7;
+  }
 `;
 export const ContactButton = styled.div`
   padding: 11px 16px;
