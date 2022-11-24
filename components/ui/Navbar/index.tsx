@@ -14,16 +14,18 @@ export const Navbar = () => {
   let profile: any;
   let about: any;
   let tecnologies: any;
+  let contact: any;
   if (typeof window !== "undefined") {
     certificates = document.querySelector("#certificates");
     projects = document.querySelector("#projects");
     profile = document.querySelector("#profile");
     about = document.querySelector("#about");
     tecnologies = document.querySelector("#tecnologies");
+    contact = document.querySelector("#contact");
   }
   const [isVisible, setIsVisible] = useState(false);
   const showContactButton = () => {
-    if (window.scrollY >= 800) {
+    if (window.scrollY >= 800 && window.scrollY < 4240) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -46,7 +48,13 @@ export const Navbar = () => {
           </Item>
         </div>
         <ContactContainer isVisible={isVisible}>
-          <ContactButton>Contáctame</ContactButton>
+          <ContactButton
+            onClick={() =>
+              contact?.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            Contáctame
+          </ContactButton>
         </ContactContainer>
         <ContainerNav>
           <Item

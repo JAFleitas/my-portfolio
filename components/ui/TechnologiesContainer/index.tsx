@@ -18,4 +18,5 @@ const Grid = styled.section`
   max-width: 800px;
   gap: 20px;
   padding-top: 80px;
+  justify-items: center;
 `;

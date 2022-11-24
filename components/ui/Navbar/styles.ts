@@ -16,11 +16,10 @@ export const Container = styled.header`
 export const ContainerNav = styled.ul`
   display: flex;
   justify-content: end;
-  gap: 20px;
-  @media ${MOBILE} {
-    width: 100%;
-  }
+  gap: 24px;
+
   @media ${TABLET} {
+    display: none;
   }
 `;
 

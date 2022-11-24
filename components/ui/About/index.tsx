@@ -11,6 +11,7 @@ export const About = () => {
         Apps. Disfruto aprender nuevas tecnologías que me ayuden a ofrecer una
         mejor calidad en los proyectos que realice.
       </Paragraph>
+      <Paragraph></Paragraph>
     </Container>
   );
 };

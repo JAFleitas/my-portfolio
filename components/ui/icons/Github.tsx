@@ -7,6 +7,7 @@ export const GitHubIcon = (props: SVGProps<SVGSVGElement>) => (
       href="https://github.com/JAFleitas"
       target="_blank"
       rel="noreferrer noopener"
+      title="GitHub"
     >
       <SvgStyled
         xmlns="http://www.w3.org/2000/svg"

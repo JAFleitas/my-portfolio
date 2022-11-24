@@ -10,6 +10,7 @@ export const ImageProfile = () => {
         layout="responsive"
         width={304}
         height={304}
+        priority
       />
     </Container>
   );

@@ -7,6 +7,7 @@ export const Twitter = (props: SVGProps<SVGSVGElement>) => (
       href="https://twitter.com/JAF_Maki"
       target="_blank"
       rel="noreferrer noopener"
+      title="Twitter"
     >
       <SvgStyled
         xmlns="http://www.w3.org/2000/svg"

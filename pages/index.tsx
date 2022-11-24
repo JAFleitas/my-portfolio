@@ -6,6 +6,7 @@ import {
   Certificates,
 } from "../components/ui";
 import { Technologies } from "../components/ui/TechnologiesContainer";
+import { ContactForm } from "../components/ui/ContactForm/index";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Technologies />
       <ProjectContainer />
       <Certificates />
+      <ContactForm />
     </InitialLayout>
   );
 };
