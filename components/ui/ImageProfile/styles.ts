@@ -64,7 +64,6 @@ export const borderMove = keyframes`
 
 export const Container = styled.div`
   width: 400px;
-
   border-width: 4px;
   border-style: solid;
   border-image: linear-gradient(
@@ -80,6 +79,7 @@ export const Container = styled.div`
     1;
   border-radius: 0.25rem;
   height: max-content;
+  max-width: 400px;
   animation: ${borderMove} 6s linear infinite;
   @media ${MOBILE} {
     width: 100%;

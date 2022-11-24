@@ -20,8 +20,6 @@ export const ButtonStyled = styled.button`
     background: #0d1117;
   }
 
-  @media ${TABLET} {
-  }
   @media ${MOBILE} {
     width: 100%;
   }

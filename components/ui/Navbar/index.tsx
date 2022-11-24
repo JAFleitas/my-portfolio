@@ -1,4 +1,4 @@
-import { Container, Item, Nav } from "./styles";
+import { Container, Item, ContainerNav, Header } from "./styles";
 
 export const Navbar = () => {
   let certificates: any;
@@ -14,36 +14,43 @@ export const Navbar = () => {
 
   return (
     <Container>
-      <Nav>
-        <Item
-          onClick={() =>
-            profile?.scrollIntoView({ behavior: "smooth", block: "start" })
-          }
-        >
-          {"<GF/>"}
-        </Item>
-        <Item
-          onClick={() =>
-            about?.scrollIntoView({ behavior: "smooth", block: "start" })
-          }
-        >
-          Sobre Mi
-        </Item>
-        <Item
-          onClick={() =>
-            projects?.scrollIntoView({ behavior: "smooth", block: "start" })
-          }
-        >
-          Proyectos
-        </Item>
-        <Item
-          onClick={() =>
-            certificates?.scrollIntoView({ behavior: "smooth", block: "start" })
-          }
-        >
-          Certificados
-        </Item>
-      </Nav>
+      <Header>
+        <div>
+          <Item
+            onClick={() =>
+              profile?.scrollIntoView({ behavior: "smooth", block: "center" })
+            }
+          >
+            {"<GF/>"}
+          </Item>
+        </div>
+        <ContainerNav>
+          <Item
+            onClick={() =>
+              about?.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            Sobre Mi
+          </Item>
+          <Item
+            onClick={() =>
+              projects?.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            Proyectos
+          </Item>
+          <Item
+            onClick={() =>
+              certificates?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            }
+          >
+            Certificados
+          </Item>
+        </ContainerNav>
+      </Header>
     </Container>
   );
 };

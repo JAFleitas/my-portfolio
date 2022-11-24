@@ -15,15 +15,15 @@ export const Container = styled.div`
   align-items: center;
   padding-bottom: 400px;
 `;
-export const ChildrenContainer = styled.div`
+export const ChildrenContainer = styled.main`
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 60%;
   color: #d0d0d0;
   margin-top: 80px;
-  gap: 200px;
+  gap: 300px;
   @media ${MOBILE} {
-    width: 90%;
+    width: 70%;
   }
   @media ${TABLET} {
     width: 80%;

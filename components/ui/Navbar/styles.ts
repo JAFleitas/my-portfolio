@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MOBILE, TABLET } from "../../../helpers/constants";
 
-export const Container = styled.div`
+export const Container = styled.header`
   display: flex;
   width: 100%;
   height: 60px;
@@ -13,16 +13,14 @@ export const Container = styled.div`
   z-index: 100;
 `;
 
-export const Nav = styled.ul`
+export const ContainerNav = styled.ul`
   display: flex;
-  justify-content: space-around;
-  width: 60%;
-  padding: 40px;
+  justify-content: end;
+  gap: 20px;
   @media ${MOBILE} {
     width: 100%;
   }
   @media ${TABLET} {
-    width: 80%;
   }
 `;
 
@@ -32,14 +30,19 @@ interface Props {
 export const Item = styled.li<Props>`
   text-transform: capitalize;
   font-weight: 800;
-  color: ${(props) => (props.isPressed ? "#aaa" : "#ccc")};
+  color: ${(props) => (props.isPressed ? "#888" : "#ccc")};
   list-style: none;
-  padding: 4px;
-  margin: 4px;
-  height: 30px;
   cursor: pointer;
   :hover {
-    color: #fff;
-    border-bottom: 2px solid #fff;
+    color: #eee;
   }
+`;
+
+export const Header = styled.nav`
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
 `;

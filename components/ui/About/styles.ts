@@ -12,14 +12,14 @@ export const Container = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 500;
-  line-height: 1cm;
-  color: #ccc;
-  animation: ${fadeIn} 2s linear forwards;
-
+  line-height: 0.7cm;
+  color: #aaa;
+  animation: ${fadeIn} 3s linear forwards;
+  text-align: justify;
+  text-justify: inter-word;
   @media ${MOBILE} {
     align-items: center;
   }

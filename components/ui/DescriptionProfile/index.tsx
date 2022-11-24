@@ -9,9 +9,9 @@ export const DescriptionProfile = () => {
     <Container>
       <Title id="profile"> Gonzalo Damian Fleitas</Title>
       <Profession>Jr. Frontend and Backend Developer</Profession>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <article style={{ display: "flex", justifyContent: "center" }}>
         <ImageProfile />
-      </div>
+      </article>
       <SocialNetworkContainer>
         <Linkedin />
         <Twitter />
@@ -24,11 +24,19 @@ export const DescriptionProfile = () => {
     </Container>
   );
 };
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { MOBILE, TABLET } from "../../../helpers/constants";
 
+const colorChange = keyframes`
+ 0%{
+    color: #234c87;
+  }
+  100%{
+    color: #0f89e3;
+  }
+
+`;
 const Title = styled.h1`
-  padding-top: 80px;
   font-weight: 900;
   color: #fde047f0;
   font-size: 4rem;
@@ -37,14 +45,14 @@ const Title = styled.h1`
   justify-content: center;
   margin: 0;
   @media ${MOBILE} {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
   }
   @media ${TABLET} {
     font-size: 3rem;
   }
 `;
-const Container = styled.div`
+const Container = styled.section`
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -53,22 +61,24 @@ const Container = styled.div`
 `;
 const Profession = styled.h2`
   color: #234c87;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: normal;
   display: flex;
   align-items: start;
   justify-content: center;
   margin-top: 0;
+
+  animation: ${colorChange} 2.5s alternate infinite;
+
   @media ${MOBILE} {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1rem;
   }
   @media ${TABLET} {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 `;
 
-const SocialNetworkContainer = styled.div`
+const SocialNetworkContainer = styled.article`
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -76,7 +86,7 @@ const SocialNetworkContainer = styled.div`
   justify-content: center;
 `;
 
-const ContainerContactButton = styled.div`
+const ContainerContactButton = styled.article`
   display: flex;
   width: 100%;
   justify-content: center;

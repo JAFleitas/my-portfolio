@@ -8,7 +8,7 @@ export const ProjectContainer = () => {
     <Container>
       <SubTitle id="projects">Proyectos</SubTitle>
       <CardContainer>
-        {[1, 2, 3, 4, 5, 6].map((e) => (
+        {[1, 2, 3].map((e) => (
           <CardProject key={e} />
         ))}
       </CardContainer>

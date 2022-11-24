@@ -3,21 +3,21 @@ import { MOBILE, TABLET } from "../helpers/constants";
 
 export const SubTitle = styled.h2`
   font-weight: 900;
-  color: #234ca7;
-  font-size: 4rem;
+  color: #0f89e3;
+  font-size: 2.4rem;
   display: flex;
   align-items: start;
+  padding: 0 20px;
   padding-bottom: 16px;
   padding-top: 80px;
   margin: 0;
-  border-bottom: 0.4rem solid #234ca7;
+  border-bottom: 0.2rem solid #0f89e3;
   margin-bottom: 60px;
+
   @media ${MOBILE} {
-    font-size: 2.5rem;
     font-weight: 800;
   }
   @media ${TABLET} {
-    font-size: 3rem;
   }
 `;
 

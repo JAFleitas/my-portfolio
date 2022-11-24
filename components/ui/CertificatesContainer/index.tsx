@@ -20,7 +20,7 @@ export const Certificates = () => {
             <Image
               width={700}
               height={400}
-              src="/assets/certificates/certificado-henry.jpeg"
+              src="/assets/certificates/certificado-henry.jpg"
               alt="certificado Henry"
             />
           </a>
@@ -34,7 +34,7 @@ export const Certificates = () => {
             <Image
               width={700}
               height={400}
-              src="/assets/certificates/certificado-alkemy.jpeg"
+              src="/assets/certificates/certificado-alkemy.jpg"
               alt="certificado Alkemy"
             />
           </a>
