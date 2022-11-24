@@ -1,4 +1,12 @@
-import { Container, Item, ContainerNav, Header } from "./styles";
+import { useEffect, useState } from "react";
+import {
+  Container,
+  Item,
+  ContainerNav,
+  Header,
+  ContactContainer,
+  ContactButton,
+} from "./styles";
 
 export const Navbar = () => {
   let certificates: any;
@@ -11,7 +19,18 @@ export const Navbar = () => {
     profile = document.querySelector("#profile");
     about = document.querySelector("#about");
   }
-
+  const [isVisible, setIsVisible] = useState(false);
+  const showContactButton = () => {
+    if (window.scrollY >= 800) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("scroll", showContactButton);
+    return () => document.removeEventListener("scroll", showContactButton);
+  });
   return (
     <Container>
       <Header>
@@ -24,6 +43,9 @@ export const Navbar = () => {
             {"<GF/>"}
           </Item>
         </div>
+        <ContactContainer isVisible={isVisible}>
+          <ContactButton>Contactame</ContactButton>
+        </ContactContainer>
         <ContainerNav>
           <Item
             onClick={() =>

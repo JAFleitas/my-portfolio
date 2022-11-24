@@ -46,3 +46,26 @@ export const Header = styled.nav`
   justify-content: space-between;
   max-width: 1200px;
 `;
+
+interface PropsContactButton {
+  isVisible: boolean;
+}
+
+export const ContactContainer = styled.div<PropsContactButton>`
+  border: 2px solid #0f89e3;
+  border-radius: 6px;
+  box-shadow: 0 0 21px 0px #234ca7;
+
+  display: ${({ isVisible }) => (isVisible ? "inline-block" : "none")};
+`;
+export const ContactButton = styled.div`
+  padding: 11px 16px;
+  background-color: #000;
+  border: 0 solid #e5e7eb;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: bold;
+  font-family: Roboto;
+  cursor: pointer;
+`;
