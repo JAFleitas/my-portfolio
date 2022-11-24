@@ -8,12 +8,7 @@ interface Props {
   width?: number;
   height?: number;
 }
-export const IconTecno: FC<Props> = ({
-  src,
-  name,
-  height = 30,
-  width = 30,
-}) => {
+export const IconTech: FC<Props> = ({ src, name, height = 30, width = 30 }) => {
   return (
     <Container>
       <Icon>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { InitialLayout } from "../components/layout/InitialLayout";
 import {
   Profile,
@@ -6,14 +5,14 @@ import {
   ProjectContainer,
   Certificates,
 } from "../components/ui";
-import { Tecnologies } from "../components/ui/TecnologiesContainer";
+import { Technologies } from "../components/ui/TechnologiesContainer";
 
 const HomePage = () => {
   return (
     <InitialLayout>
       <Profile />
       <About />
-      <Tecnologies />
+      <Technologies />
       <ProjectContainer />
       <Certificates />
     </InitialLayout>

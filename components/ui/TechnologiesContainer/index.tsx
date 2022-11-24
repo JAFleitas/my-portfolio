@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { data } from "../../../helpers/tecnos";
-import { IconTecno } from "../IconTecno/index";
+import { data } from "../../../helpers/technologies";
+import { IconTech } from "../IconTech/index";
 
-export const Tecnologies = () => {
+export const Technologies = () => {
   return (
     <Grid id="tecnologies">
       {data.map(({ name, src }, i) => (
-        <IconTecno key={i} name={name} src={src} />
+        <IconTech key={i} name={name} src={src} />
       ))}
     </Grid>
   );
