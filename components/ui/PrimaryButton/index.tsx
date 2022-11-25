@@ -1,11 +1,16 @@
 import React, { FC } from "react";
 import { ButtonStyled } from "./styles";
 import { PropsWithChildren } from "react";
-
-export const PrimaryButton: FC<PropsWithChildren> = ({ children }) => {
+interface Props {
+  onClick?: () => void;
+}
+export const PrimaryButton: FC<PropsWithChildren<Props>> = ({
+  children,
+  onClick,
+}) => {
   return (
     <>
-      <ButtonStyled>{children}</ButtonStyled>
+      <ButtonStyled onClick={onClick}>{children}</ButtonStyled>
     </>
   );
 };

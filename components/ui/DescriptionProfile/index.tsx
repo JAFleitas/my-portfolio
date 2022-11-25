@@ -5,6 +5,11 @@ import { PrimaryButton } from "../PrimaryButton/index";
 import { ImageProfile } from "../ImageProfile";
 
 export const DescriptionProfile = () => {
+  let contact: any;
+  if (typeof window !== "undefined") {
+    contact = document.querySelector("#contact");
+  }
+
   return (
     <Container>
       <Title id="profile"> Gonzalo Damián Fleitas</Title>
@@ -26,7 +31,13 @@ export const DescriptionProfile = () => {
         >
           <PrimaryButton>Curriculum Vitae</PrimaryButton>
         </a>
-        <PrimaryButton>Contáctame</PrimaryButton>
+        <PrimaryButton
+          onClick={() =>
+            contact?.scrollIntoView({ behavior: "smooth", block: "start" })
+          }
+        >
+          Contáctame
+        </PrimaryButton>
       </ContainerContactButton>
     </Container>
   );
