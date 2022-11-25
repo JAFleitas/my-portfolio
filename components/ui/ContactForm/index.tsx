@@ -146,7 +146,7 @@ import { Linkedin } from "../icons/Linkedin";
 import { Twitter } from "../icons/Twitter";
 import { GitHubIcon } from "../icons/Github";
 
-export const Container = styled.article`
+const Container = styled.article`
   display: flex;
   justify-content: center;
   flex-direction: column;
