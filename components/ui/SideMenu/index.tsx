@@ -34,7 +34,7 @@ export const SideMenu = () => {
 
   const { isMenuOpen, toggleSideMenu } = useUiContext();
   const closeSideMenu = () => {
-    setTimeout(toggleSideMenu, 500);
+    setTimeout(toggleSideMenu, 750);
   };
 
   return (
@@ -60,7 +60,7 @@ export const SideMenu = () => {
           <ListItem
             button
             onClick={() => {
-              profile?.scrollIntoView({ behavior: "smooth", block: "start" });
+              profile?.scrollIntoView({ behavior: "smooth", block: "end" });
               closeSideMenu();
             }}
           >

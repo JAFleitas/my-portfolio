@@ -6,8 +6,8 @@ import { ImageProfile } from "../ImageProfile";
 
 export const DescriptionProfile = () => {
   return (
-    <Container id="profile">
-      <Title> Gonzalo Damian Fleitas</Title>
+    <Container>
+      <Title id="profile"> Gonzalo Damian Fleitas</Title>
       <Profession>Jr. Frontend and Backend Developer</Profession>
       <article style={{ display: "flex", justifyContent: "center" }}>
         <ImageProfile />
