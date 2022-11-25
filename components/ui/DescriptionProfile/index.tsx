@@ -8,7 +8,7 @@ export const DescriptionProfile = () => {
   return (
     <Container>
       <Title id="profile"> Gonzalo Damian Fleitas</Title>
-      <Profession>Jr. Frontend and Backend Developer</Profession>
+      <Profession>Desarrollador Frontend - Backend Jr.</Profession>
       <article style={{ display: "flex", justifyContent: "center" }}>
         <ImageProfile />
       </article>

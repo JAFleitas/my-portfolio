@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <UiProvider>
-        <Component {...pageProps} />)
+        <Component {...pageProps} />
       </UiProvider>
     </>
   );
