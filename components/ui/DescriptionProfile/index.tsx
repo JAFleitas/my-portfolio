@@ -9,7 +9,8 @@ export const DescriptionProfile = () => {
   if (typeof window !== "undefined") {
     contact = document.querySelector("#contact");
   }
-
+  const goToContact = () =>
+    contact?.scrollIntoView({ behavior: "smooth", block: "start" });
   return (
     <Container>
       <Title id="profile"> Gonzalo Damián Fleitas</Title>
@@ -24,6 +25,7 @@ export const DescriptionProfile = () => {
       </SocialNetworkContainer>
       <ContainerContactButton>
         <a
+          title="Descargar cv"
           href="/documents/CV-Frontend-Web-Developer-Gonzalo-Fleitas.pdf"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,13 +33,7 @@ export const DescriptionProfile = () => {
         >
           <PrimaryButton>Curriculum Vitae</PrimaryButton>
         </a>
-        <PrimaryButton
-          onClick={() =>
-            contact?.scrollIntoView({ behavior: "smooth", block: "start" })
-          }
-        >
-          Contáctame
-        </PrimaryButton>
+        <PrimaryButton onClick={goToContact}>Contáctame</PrimaryButton>
       </ContainerContactButton>
     </Container>
   );
