@@ -50,6 +50,9 @@ export const Container = styled.nav`
   @media ${MOBILE} {
     width: 70%;
   }
+  @media ${TABLET} {
+    width: 80%;
+  }
 `;
 
 interface PropsContactButton {

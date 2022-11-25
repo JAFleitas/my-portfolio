@@ -115,5 +115,8 @@ const ContainerContactButton = styled.article`
     align-items: center;
     padding: 0px;
     gap: 20px;
+    a {
+      width: 100%;
+    }
   }
 `;
