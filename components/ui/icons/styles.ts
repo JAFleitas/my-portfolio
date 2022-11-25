@@ -1,16 +1,20 @@
 import styled from "styled-components";
 
-export const SvgStyled = styled.svg`
+interface Props {
+  fill?: string;
+  fillHover?: string;
+}
+export const SvgStyled = styled.svg<Props>`
   transition: all 0.3s ease;
 
   path {
-    fill: #ddd;
+    fill: ${({ fill }) => (fill ? fill : "#ddd")};
   }
   :hover {
     width: 54px;
     height: 50px;
     path {
-      fill: #fff;
+      fill: ${({ fillHover }) => (fillHover ? fillHover : "#fff")};
     }
   }
 `;

@@ -1,6 +1,6 @@
 import { SubTitle } from "../../../styles/globalStyledComponents";
 import { useState } from "react";
-import { Box, Grid, TextField, Typography, Button, Chip } from "@mui/material";
+import { Box, Grid, TextField, Button, Chip, Divider } from "@mui/material";
 /* import { useForm } from "react-hook-form"; */
 
 /* import { LinkComponent } from "../../components/ui";
@@ -130,11 +130,21 @@ export const ContactForm = () => {
           </Box>
         </form>
       </Container>
+      <Divider role="presentation">Or</Divider>
+      <SocialNetworkContainer>
+        <Linkedin fillHover="#1293d2" fill="#0f89e3" />
+        <GitHubIcon />
+        <Twitter fill="#0f89e3" fillHover="#33c5ff" />
+      </SocialNetworkContainer>
     </section>
   );
 };
 
 import styled from "styled-components";
+import { SocialNetworkContainer } from "../DescriptionProfile";
+import { Linkedin } from "../icons/Linkedin";
+import { Twitter } from "../icons/Twitter";
+import { GitHubIcon } from "../icons/Github";
 
 export const Container = styled.article`
   display: flex;

@@ -1,7 +1,10 @@
-import { SVGProps } from "react";
 import { ContainerIcon, SvgStyled } from "./styles";
-
-export const Linkedin = (props: SVGProps<SVGSVGElement>) => (
+import { FC } from "react";
+interface Props {
+  fill?: string;
+  fillHover?: string;
+}
+export const Linkedin: FC<Props> = ({ fill, fillHover }) => (
   <ContainerIcon>
     <a
       href="https://www.linkedin.com/in/fleitas-gonzalo/"
@@ -10,6 +13,8 @@ export const Linkedin = (props: SVGProps<SVGSVGElement>) => (
       title="LinkedIn"
     >
       <SvgStyled
+        fill={fill}
+        fillHover={fillHover}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 50 50"
         width={42}

@@ -92,7 +92,7 @@ const Profession = styled.h2`
   }
 `;
 
-const SocialNetworkContainer = styled.article`
+export const SocialNetworkContainer = styled.article`
   display: flex;
   flex-direction: row;
   gap: 8px;

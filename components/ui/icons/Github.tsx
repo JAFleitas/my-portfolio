@@ -1,7 +1,10 @@
-import { SVGProps } from "react";
 import { ContainerIcon, SvgStyled } from "./styles";
-
-export const GitHubIcon = (props: SVGProps<SVGSVGElement>) => (
+import { FC } from "react";
+interface Props {
+  fill?: string;
+  fillHover?: string;
+}
+export const GitHubIcon: FC<Props> = ({ fill, fillHover }) => (
   <ContainerIcon>
     <a
       href="https://github.com/JAFleitas"
@@ -10,6 +13,8 @@ export const GitHubIcon = (props: SVGProps<SVGSVGElement>) => (
       title="GitHub"
     >
       <SvgStyled
+        fill={fill}
+        fillHover={fillHover}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         width={42}
