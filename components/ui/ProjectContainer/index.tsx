@@ -5,8 +5,8 @@ import { MOBILE, TABLET } from "../../../helpers/constants";
 
 export const ProjectContainer = () => {
   return (
-    <Container>
-      <SubTitle id="projects">Proyectos</SubTitle>
+    <Container id="projects">
+      <SubTitle>Proyectos</SubTitle>
       <CardContainer>
         {[1, 2, 3].map((e) => (
           <CardProject key={e} />

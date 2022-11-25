@@ -19,4 +19,7 @@ const Grid = styled.section`
   gap: 20px;
   padding-top: 80px;
   justify-items: center;
+  @media (max-width: 390px) {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
 `;

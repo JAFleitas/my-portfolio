@@ -4,3 +4,6 @@ export * from "./About";
 export * from "./ProjectContainer";
 export * from "./CardProject";
 export * from "./CertificatesContainer";
+export * from "./TechnologiesContainer";
+export * from "./SideMenu";
+export * from "./ContactForm";

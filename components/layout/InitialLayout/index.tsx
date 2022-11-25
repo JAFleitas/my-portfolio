@@ -1,14 +1,14 @@
-import { FC, PropsWithChildren } from "react"
-import { Navbar } from "../../ui"
-import {Container,ChildrenContainer} from "./styles"
+import { FC, PropsWithChildren } from "react";
+import { Navbar, SideMenu } from "../../ui";
 
-export const InitialLayout:FC<PropsWithChildren> = ({children}) => {
+import { Container, ChildrenContainer } from "./styles";
+
+export const InitialLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <Container>
       <Navbar />
-      <ChildrenContainer>
-        {children}
-      </ChildrenContainer>
+      <SideMenu />
+      <ChildrenContainer>{children}</ChildrenContainer>
     </Container>
-  )
-}
+  );
+};

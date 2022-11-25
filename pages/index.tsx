@@ -4,9 +4,9 @@ import {
   About,
   ProjectContainer,
   Certificates,
+  Technologies,
+  ContactForm,
 } from "../components/ui";
-import { Technologies } from "../components/ui/TechnologiesContainer";
-import { ContactForm } from "../components/ui/ContactForm/index";
 
 const HomePage = () => {
   return (

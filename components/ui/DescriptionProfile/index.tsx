@@ -6,8 +6,8 @@ import { ImageProfile } from "../ImageProfile";
 
 export const DescriptionProfile = () => {
   return (
-    <Container>
-      <Title id="profile"> Gonzalo Damian Fleitas</Title>
+    <Container id="profile">
+      <Title> Gonzalo Damian Fleitas</Title>
       <Profession>Jr. Frontend and Backend Developer</Profession>
       <article style={{ display: "flex", justifyContent: "center" }}>
         <ImageProfile />
@@ -45,7 +45,7 @@ const Title = styled.h1`
   justify-content: center;
   margin: 0;
   @media ${MOBILE} {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
   }
   @media ${TABLET} {
@@ -71,7 +71,7 @@ const Profession = styled.h2`
   animation: ${colorChange} 2.5s alternate infinite;
 
   @media ${MOBILE} {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   @media ${TABLET} {
     font-size: 1.2rem;

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import useUiContext from "../../../hook/useUiContext";
 import {
   Container,
   Item,
@@ -6,6 +8,7 @@ import {
   Header,
   ContactContainer,
   ContactButton,
+  NavMobile,
 } from "./styles";
 
 export const Navbar = () => {
@@ -35,13 +38,15 @@ export const Navbar = () => {
     document.addEventListener("scroll", showContactButton);
     return () => document.removeEventListener("scroll", showContactButton);
   });
+
+  const { toggleSideMenu } = useUiContext();
   return (
-    <Container>
-      <Header>
+    <Header>
+      <Container>
         <div>
           <Item
             onClick={() =>
-              profile?.scrollIntoView({ behavior: "smooth", block: "center" })
+              profile?.scrollIntoView({ behavior: "smooth", block: "start" })
             }
           >
             {"<GF/>"}
@@ -93,7 +98,10 @@ export const Navbar = () => {
             Certificados
           </Item>
         </ContainerNav>
-      </Header>
-    </Container>
+        <NavMobile onClick={toggleSideMenu}>
+          <MenuRoundedIcon />
+        </NavMobile>
+      </Container>
+    </Header>
   );
 };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MOBILE, TABLET } from "../../../helpers/constants";
 
-export const Container = styled.header`
+export const Header = styled.header`
   display: flex;
   width: 100%;
   height: 60px;
@@ -21,6 +21,9 @@ export const ContainerNav = styled.ul`
   @media ${TABLET} {
     display: none;
   }
+  @media ${MOBILE} {
+    display: none;
+  }
 `;
 
 interface Props {
@@ -37,13 +40,16 @@ export const Item = styled.li<Props>`
   }
 `;
 
-export const Header = styled.nav`
+export const Container = styled.nav`
   display: flex;
   width: 60%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   max-width: 800px;
+  @media ${MOBILE} {
+    width: 70%;
+  }
 `;
 
 interface PropsContactButton {
@@ -70,4 +76,21 @@ export const ContactButton = styled.div`
   font-weight: bold;
   font-family: Roboto;
   cursor: pointer;
+`;
+
+export const NavMobile = styled.button`
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: none;
+
+  @media ${MOBILE} {
+    display: block;
+  }
+  @media ${TABLET} {
+    display: block;
+  }
+  svg {
+    font-size: 2rem;
+  }
 `;
