@@ -1,14 +1,11 @@
 import React, { FC } from "react";
 import { ButtonStyled } from "./styles";
+import { PropsWithChildren } from "react";
 
-interface Props {
-  content: string;
-}
-
-export const PrimaryButton: FC<Props> = ({ content }) => {
+export const PrimaryButton: FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
-      <ButtonStyled>{content}</ButtonStyled>
+      <ButtonStyled>{children}</ButtonStyled>
     </>
   );
 };

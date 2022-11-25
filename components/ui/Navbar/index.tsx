@@ -46,7 +46,7 @@ export const Navbar = () => {
         <div>
           <Item
             onClick={() =>
-              profile?.scrollIntoView({ behavior: "smooth", block: "start" })
+              profile?.scrollIntoView({ behavior: "smooth", block: "end" })
             }
           >
             {"<GF/>"}

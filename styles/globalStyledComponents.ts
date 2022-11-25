@@ -8,7 +8,7 @@ export const SubTitle = styled.h2`
   display: flex;
   align-items: start;
   padding: 0 20px;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
   padding-top: 80px;
   margin: 0;
   border-bottom: 0.2rem solid #0f89e3;
@@ -16,8 +16,10 @@ export const SubTitle = styled.h2`
 
   @media ${MOBILE} {
     font-weight: 800;
+    font-size: 1.7rem;
   }
   @media ${TABLET} {
+    font-size: 1.8rem;
   }
 `;
 

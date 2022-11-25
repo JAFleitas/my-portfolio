@@ -7,7 +7,7 @@ import { ImageProfile } from "../ImageProfile";
 export const DescriptionProfile = () => {
   return (
     <Container>
-      <Title id="profile"> Gonzalo Damian Fleitas</Title>
+      <Title id="profile"> Gonzalo Damián Fleitas</Title>
       <Profession>Desarrollador Frontend - Backend Jr.</Profession>
       <article style={{ display: "flex", justifyContent: "center" }}>
         <ImageProfile />
@@ -18,8 +18,15 @@ export const DescriptionProfile = () => {
         <GitHubIcon />
       </SocialNetworkContainer>
       <ContainerContactButton>
-        <PrimaryButton content="Curriculum Vitae" />
-        <PrimaryButton content="Contáctame" />
+        <a
+          href="/documents/CV-Frontend-Web-Developer-Gonzalo-Fleitas.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          download="CV-Frontend-Web-Developer-Gonzalo-Fleitas.pdf"
+        >
+          <PrimaryButton>Curriculum Vitae</PrimaryButton>
+        </a>
+        <PrimaryButton>Contáctame</PrimaryButton>
       </ContainerContactButton>
     </Container>
   );
