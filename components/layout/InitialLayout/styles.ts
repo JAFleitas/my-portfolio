@@ -13,7 +13,7 @@ export const Container = styled.div`
   );
   min-height: 100vh;
   align-items: center;
-  padding-bottom: 400px;
+  padding-bottom: 100px;
 `;
 export const ChildrenContainer = styled.main`
   display: flex;
