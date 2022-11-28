@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import useUiContext from "../../../hook/useUiContext";
+import useAutoFocus from "../../../hook/useAutoFocus";
 import {
   Container,
   Item,
@@ -40,6 +41,7 @@ export const Navbar = () => {
   });
 
   const { toggleSideMenu } = useUiContext();
+  const { onFocus } = useAutoFocus();
   return (
     <Header>
       <Container>
@@ -54,9 +56,10 @@ export const Navbar = () => {
         </div>
         <ContactContainer isVisible={isVisible}>
           <ContactButton
-            onClick={() =>
-              contact?.scrollIntoView({ behavior: "smooth", block: "start" })
-            }
+            onClick={() => {
+              contact?.scrollIntoView({ behavior: "smooth", block: "start" });
+              onFocus();
+            }}
           >
             Contáctame
           </ContactButton>

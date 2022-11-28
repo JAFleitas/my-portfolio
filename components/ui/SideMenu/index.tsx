@@ -1,4 +1,5 @@
 import useUiContext from "../../../hook/useUiContext";
+import useAutoFocus from "../../../hook/useAutoFocus";
 import {
   Box,
   Drawer,
@@ -33,6 +34,7 @@ export const SideMenu = () => {
   }
 
   const { isMenuOpen, toggleSideMenu } = useUiContext();
+  const { onFocus } = useAutoFocus();
   const closeSideMenu = () => {
     setTimeout(toggleSideMenu, 750);
   };
@@ -131,6 +133,7 @@ export const SideMenu = () => {
             button
             onClick={() => {
               contact?.scrollIntoView({ behavior: "smooth", block: "start" });
+              onFocus();
               closeSideMenu();
             }}
           >

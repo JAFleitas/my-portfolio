@@ -15,6 +15,7 @@ import { useForm } from "react-hook-form";
 import { ErrorOutline, ThumbUpRounded } from "@mui/icons-material";
 
 import { isEmail } from "../../../helpers/validations";
+import useAutoFocus from "../../../hook/useAutoFocus";
 
 type FormData = {
   email: string;
@@ -26,7 +27,7 @@ export const ContactForm = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>();
-
+  const { autoFocus } = useAutoFocus();
   const [showError, setShowError] = useState(false);
   const [showOkey, setShowOkey] = useState(false);
   const [emailInput, setEmailInput] = useState("");
@@ -49,6 +50,7 @@ export const ContactForm = () => {
     setTimeout(() => setShowOkey(false), 2000);
     return;
   };
+
   return (
     <section id="contact">
       <Container>
@@ -66,7 +68,7 @@ export const ContactForm = () => {
                   inputRef={(input) => input?.focus()}
 
                   {...register("password", {
-                    required: "Required field",
+                    required: "Campo requerido.",
                     minLength: {
                       value: 6,
                       message: "Password requires min 6 characters",
@@ -81,9 +83,9 @@ export const ContactForm = () => {
                   type="email"
                   label="Email"
                   fullWidth
-                  autoFocus={true}
+                  autoFocus={autoFocus}
                   {...register("email", {
-                    required: "Required field",
+                    required: "Campo requerido.",
                     validate: isEmail,
                   })}
                   error={!!errors.email}
@@ -101,7 +103,7 @@ export const ContactForm = () => {
                   multiline
                   rows={4}
                   {...register("text", {
-                    required: "Required field",
+                    required: "Campo requerido.",
                     minLength: {
                       value: 10,
                       message: "se requiere un texto de 10 caracteres",

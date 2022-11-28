@@ -4,13 +4,20 @@ import { Twitter } from "../icons/Twitter";
 import { PrimaryButton } from "../PrimaryButton/index";
 import { ImageProfile } from "../ImageProfile";
 
+import styled, { keyframes } from "styled-components";
+import { MOBILE, TABLET } from "../../../helpers/constants";
+import useAutoFocus from "../../../hook/useAutoFocus";
+
 export const DescriptionProfile = () => {
   let contact: any;
   if (typeof window !== "undefined") {
     contact = document.querySelector("#contact");
   }
-  const goToContact = () =>
+  const { onFocus } = useAutoFocus();
+  const goToContact = () => {
     contact?.scrollIntoView({ behavior: "smooth", block: "start" });
+    onFocus();
+  };
   return (
     <Container>
       <Title id="profile"> Gonzalo Damián Fleitas</Title>
@@ -38,8 +45,6 @@ export const DescriptionProfile = () => {
     </Container>
   );
 };
-import styled, { keyframes } from "styled-components";
-import { MOBILE, TABLET } from "../../../helpers/constants";
 
 const colorChange = keyframes`
  0%{
