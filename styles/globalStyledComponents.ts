@@ -11,8 +11,12 @@ export const SubTitle = styled.h2`
   padding-bottom: 10px;
   padding-top: 80px;
   margin: 0;
-  border-bottom: 0.2rem solid #0f89e3;
+
   margin-bottom: 60px;
+  background: #ccc;
+  background: linear-gradient(90deg, #234ca7, #5cb2f1, #234ca7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 
   @media ${MOBILE} {
     font-weight: 800;
