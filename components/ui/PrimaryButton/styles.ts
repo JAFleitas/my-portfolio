@@ -1,26 +1,47 @@
 import styled from "styled-components";
-import { MOBILE, TABLET } from "../../../helpers/constants";
+import { MOBILE } from "../../../helpers/constants";
 
 export const ButtonStyled = styled.button`
   display: flex;
-  min-width: 200px;
-  border: 4px solid #234ca7;
-  border-radius: 0.25rem;
-  background: #161b22;
+  min-width: 180px;
+
+  border: none;
+  border-radius: 12px;
+  border-left: 1px solid #333;
+
+  background-color: transparent;
   color: #ccc;
   text-align: center;
   font-weight: 700;
   justify-content: center;
-  padding: 0.6rem;
+  padding: 6px;
   transition: all 0.3s ease;
   cursor: pointer;
+
   :hover {
-    border: 4px solid #0f89e3;
-    color: #fff;
-    background: #0d1117;
+    color: #eee;
+    border-left: 1px solid #555;
   }
 
   @media ${MOBILE} {
     width: 100%;
+  }
+`;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  border: 1px solid #404c5e;
+  border-radius: 1rem;
+  background: linear-gradient(40deg, #0d1118 60%, #404c5e);
+  transition: all 0.4s;
+  padding: 6px;
+  box-shadow: 0px 0px 15px -9px #404c5e;
+  :hover {
+    border: 1px solid #ccc;
+  }
+  @media ${MOBILE} {
+    width: 90%;
   }
 `;

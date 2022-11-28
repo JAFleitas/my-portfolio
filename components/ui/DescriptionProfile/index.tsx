@@ -24,7 +24,7 @@ export const DescriptionProfile = () => {
         <GitHubIcon />
       </SocialNetworkContainer>
       <ContainerContactButton>
-        <a
+        <AncorCv
           title="Descargar cv"
           href="/documents/CV-Frontend-Web-Developer-Gonzalo-Fleitas.pdf"
           target="_blank"
@@ -32,7 +32,7 @@ export const DescriptionProfile = () => {
           download="CV-Frontend-Web-Developer-Gonzalo-Fleitas.pdf"
         >
           <PrimaryButton>Curriculum Vitae</PrimaryButton>
-        </a>
+        </AncorCv>
         <PrimaryButton onClick={goToContact}>Contáctame</PrimaryButton>
       </ContainerContactButton>
     </Container>
@@ -114,5 +114,14 @@ const ContainerContactButton = styled.article`
     a {
       width: 100%;
     }
+  }
+`;
+
+const AncorCv = styled.a`
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  @media ${MOBILE} {
+    width: 100%;
   }
 `;
