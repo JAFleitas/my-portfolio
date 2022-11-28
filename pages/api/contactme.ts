@@ -17,10 +17,12 @@ export default async function sendEmail(
 
   try {
     await transport.sendMail({
-      from,
       to: "gdf.frontend.developer@gmail.com",
-      subject: "Portfolio contact",
-      text,
+      subject: "Mensaje Portfolio :D",
+      html: `
+        <h2> ${from} </h2>
+        <p> ${text} </p>
+      `,
     });
 
     res.json({ isSend: true });
