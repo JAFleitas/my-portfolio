@@ -9,8 +9,8 @@ export const PrimaryButton: FC<PropsWithChildren<Props>> = ({
   onClick,
 }) => {
   return (
-    <Container>
-      <ButtonStyled onClick={onClick}>{children}</ButtonStyled>
+    <Container onClick={onClick}>
+      <ButtonStyled>{children}</ButtonStyled>
     </Container>
   );
 };

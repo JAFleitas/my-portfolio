@@ -28,6 +28,7 @@ export const ContactForm = () => {
     formState: { errors },
   } = useForm<FormData>();
   const { autoFocus } = useAutoFocus();
+
   const [showError, setShowError] = useState(false);
   const [showOkey, setShowOkey] = useState(false);
   const [emailInput, setEmailInput] = useState("");
@@ -83,7 +84,6 @@ export const ContactForm = () => {
                   type="email"
                   label="Email"
                   fullWidth
-                  autoFocus={autoFocus}
                   {...register("email", {
                     required: "Campo requerido.",
                     validate: isEmail,
@@ -92,6 +92,7 @@ export const ContactForm = () => {
                   helperText={errors.email?.message}
                   value={emailInput}
                   onChange={(e) => setEmailInput(e.target.value)}
+                  autoFocus={autoFocus}
                 />
               </Grid>
               <Grid item xs={12}>
