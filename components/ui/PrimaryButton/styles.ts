@@ -35,7 +35,7 @@ export const Container = styled.div`
   border: 1px solid #404c5e;
   border-radius: 1rem;
   background: linear-gradient(343deg, #0d1118 60%, #404c5e);
-  transition: all 0.4s;
+  transition: all 0.3s ease;
   padding: 6px;
   box-shadow: 0px 0px 15px -9px #051122;
   :hover {

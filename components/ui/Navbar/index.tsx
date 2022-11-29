@@ -101,7 +101,7 @@ export const Navbar = () => {
             Certificados
           </Item>
         </ContainerNav>
-        <NavMobile onClick={toggleSideMenu}>
+        <NavMobile title="menu" onClick={toggleSideMenu}>
           <MenuRoundedIcon />
         </NavMobile>
       </Container>
