@@ -11,8 +11,7 @@ export const SvgStyled = styled.svg<Props>`
     fill: ${({ fill }) => (fill ? fill : "#ddd")};
   }
   :hover {
-    width: 54px;
-    height: 50px;
+    transform: scale(1.4);
     path {
       fill: ${({ fillHover }) => (fillHover ? fillHover : "#fff")};
     }
