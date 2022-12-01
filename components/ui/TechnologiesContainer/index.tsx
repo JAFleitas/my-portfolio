@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { data } from "../../../helpers/technologies";
+import { data } from "../../../utils/technologies";
 import { IconTech } from "../IconTech/index";
 
 export const Technologies = () => {

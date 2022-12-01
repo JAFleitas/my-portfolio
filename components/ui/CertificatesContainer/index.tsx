@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import { MOBILE } from "../../../helpers/constants";
+import { MOBILE } from "../../../utils/constants";
 import { borderMove } from "../ImageProfile/styles";
 import { SubTitle } from "../../../styles/globalStyledComponents";
 

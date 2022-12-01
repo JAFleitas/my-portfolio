@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { SubTitle } from "../../../styles/globalStyledComponents";
 import { CardProject } from "../";
-import { MOBILE, TABLET } from "../../../helpers/constants";
-import { dataProjects } from "../../../helpers/dataProjects";
+import { MOBILE, TABLET } from "../../../utils/constants";
+import { dataProjects } from "../../../utils/dataProjects";
 
 export const ProjectContainer = () => {
   return (

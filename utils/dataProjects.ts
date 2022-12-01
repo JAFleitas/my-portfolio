@@ -31,14 +31,7 @@ export const dataProjects: IProject[] = [
     demoLink: "https://ecommerce-tech-khaki.vercel.app/",
     image: "/assets/projects/tecno-ecommerce.jpeg",
   },
-  {
-    title: "POKEDEX PAGE",
-    description:
-      "En ésta web encontraras todos los pokemones de la primera temporada, podras agregarlos a favorito y miras sus imagenes. Es una aplicación creada con Nextjs",
-    repoLink: "https://github.com/JAFleitas/pokemon-static-nextjs",
-    demoLink: "https://pokemon-static-nextjs-six.vercel.app/",
-    image: "/assets/projects/pokemon-page.jpeg",
-  },
+
   {
     title: "WORK BOOK",
     description:
@@ -46,5 +39,13 @@ export const dataProjects: IProject[] = [
     repoLink: "https://github.com/JAFleitas/work-book-nextjs",
     demoLink: "https://work-book-nextjs.vercel.app/",
     image: "/assets/projects/work-book-nextjs.jpeg",
+  },
+  {
+    title: "POKEDEX PAGE",
+    description:
+      "En ésta web encontraras todos los pokemones de la primera temporada, podras agregarlos a favorito y miras sus imagenes. Es una aplicación creada con Nextjs",
+    repoLink: "https://github.com/JAFleitas/pokemon-static-nextjs",
+    demoLink: "https://pokemon-static-nextjs-six.vercel.app/",
+    image: "/assets/projects/pokemon-page.jpeg",
   },
 ];

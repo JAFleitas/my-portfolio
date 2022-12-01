@@ -14,7 +14,7 @@ import { useForm } from "react-hook-form";
 
 import { ErrorOutline, ThumbUpRounded } from "@mui/icons-material";
 
-import { isEmail } from "../../../helpers/validations";
+import { isEmail } from "../../../utils/validations";
 import useAutoFocus from "../../../hook/useAutoFocus";
 
 type FormData = {
