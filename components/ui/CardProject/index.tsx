@@ -21,18 +21,20 @@ export const CardProject: FC<Props> = ({
 }) => {
   return (
     <Container>
-      <ImageContainer>
-        <Image
-          objectFit="cover"
-          objectPosition="0% 0%"
-          alt="image project"
-          src={image}
-          layout="fill"
-          style={{
-            borderRadius: "8px",
-          }}
-        />
-      </ImageContainer>
+      <a href={demoLink} target="_blank" rel="noreferrer noopener">
+        <ImageContainer>
+          <Image
+            objectFit="cover"
+            objectPosition="0% 0%"
+            alt="image project"
+            src={image}
+            layout="fill"
+            style={{
+              borderRadius: "8px",
+            }}
+          />
+        </ImageContainer>
+      </a>
       <ContainerDescription>
         <h2>{title}</h2>
         <p>{description}</p>
@@ -83,7 +85,7 @@ const ImageContainer = styled.article`
   }
   @media ${MOBILE} {
     width: 100%;
-    height: 300px;
+    height: 260px;
     :hover {
       opacity: 0.57;
       transform: scale(1);
