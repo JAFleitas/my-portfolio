@@ -3,15 +3,11 @@ import { FC } from "react";
 interface Props {
   fill?: string;
   fillHover?: string;
+  href: string;
 }
-export const GitHubIcon: FC<Props> = ({ fill, fillHover }) => (
+export const GitHubIcon: FC<Props> = ({ fill, fillHover, href }) => (
   <ContainerIcon>
-    <a
-      href="https://github.com/JAFleitas"
-      target="_blank"
-      rel="noreferrer noopener"
-      title="GitHub"
-    >
+    <a href={href} target="_blank" rel="noreferrer noopener" title="GitHub">
       <SvgStyled
         fill={fill}
         fillHover={fillHover}

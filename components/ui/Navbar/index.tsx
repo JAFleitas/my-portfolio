@@ -29,7 +29,7 @@ export const Navbar = () => {
   }
   const [isVisible, setIsVisible] = useState(false);
   const showContactButton = () => {
-    if (window.scrollY >= 800 && window.scrollY < 4240) {
+    if (window.scrollY >= 800 && window.scrollY < 7240) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

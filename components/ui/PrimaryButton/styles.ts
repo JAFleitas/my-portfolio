@@ -14,6 +14,7 @@ export const ButtonStyled = styled.button`
   text-align: center;
   font-weight: 700;
   justify-content: center;
+  align-items: center;
   padding: 6px;
   transition: all 0.3s ease;
   cursor: pointer;

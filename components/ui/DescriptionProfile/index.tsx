@@ -28,7 +28,7 @@ export const DescriptionProfile = () => {
       <SocialNetworkContainer>
         <Linkedin />
         <Twitter />
-        <GitHubIcon />
+        <GitHubIcon href="https://github.com/JAFleitas" />
       </SocialNetworkContainer>
       <ContainerContactButton>
         <AncorCv
