@@ -5,7 +5,7 @@ import { PrimaryButton } from "../PrimaryButton/index";
 import { ImageProfile } from "../ImageProfile";
 
 import styled, { keyframes } from "styled-components";
-import { MOBILE, TABLET } from "../../../helpers/constants";
+import { MOBILE, TABLET } from "../../../utils/constants";
 import useAutoFocus from "../../../hook/useAutoFocus";
 
 export const DescriptionProfile = () => {

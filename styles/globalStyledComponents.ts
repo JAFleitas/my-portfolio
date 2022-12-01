@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { MOBILE, TABLET } from "../helpers/constants";
+import { MOBILE, TABLET } from "../utils/constants";
 
 export const SubTitle = styled.h2`
   font-weight: 900;

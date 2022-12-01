@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MOBILE, TABLET } from "../../../helpers/constants";
+import { MOBILE, TABLET } from "../../../utils/constants";
 import { GitHubIcon } from "../icons/Github";
 import { PrimaryButton } from "../PrimaryButton";
 import Image from "next/image";
@@ -24,14 +24,12 @@ export const CardProject: FC<Props> = ({
       <ImageContainer>
         <Image
           objectFit="cover"
-          objectPosition="0% 100%"
+          objectPosition="0% 0%"
           alt="image project"
           src={image}
           layout="fill"
           style={{
             borderRadius: "8px",
-            filter: "  saturate(40%) )",
-            opacity: ".57",
           }}
         />
       </ImageContainer>
@@ -55,12 +53,14 @@ export const CardProject: FC<Props> = ({
 
 const Container = styled.div`
   display: flex;
-
   width: 100%;
   height: 600px;
   border-radius: 0.5rem;
-
   position: relative;
+  @media ${MOBILE} {
+    margin-bottom: 50px;
+    height: 700px;
+  }
 `;
 
 const ImageContainer = styled.article`
@@ -74,9 +74,20 @@ const ImageContainer = styled.article`
   border: none;
   border-radius: 8px;
   box-shadow: 0px 0px 32px -11px #0f0f0f83;
+
+  opacity: 0.57;
+  transition: all 0.4s ease-out;
+  :hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
   @media ${MOBILE} {
     width: 100%;
-    height: 60%;
+    height: 300px;
+    :hover {
+      opacity: 0.57;
+      transform: scale(1);
+    }
   }
 `;
 
@@ -97,6 +108,15 @@ const ContainerDescription = styled.article`
   p {
     font-weight: 300;
     font-family: system-ui;
+  }
+  @media ${MOBILE} {
+    width: 100%;
+    padding-top: 300px;
+    justify-content: flex-start;
+    align-items: center;
+    p {
+      text-align: justify;
+    }
   }
 `;
 const ContainerButton = styled.article`

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { FC, PropsWithChildren } from "react";
-import { DESCRIPTION } from "../../../helpers/constants";
+import { DESCRIPTION } from "../../../utils/constants";
 import { Navbar, SideMenu } from "../../ui";
 
 import { Container, ChildrenContainer } from "./styles";

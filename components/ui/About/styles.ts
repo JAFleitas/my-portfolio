@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MOBILE } from "../../../helpers/constants";
+import { MOBILE } from "../../../utils/constants";
 import { fadeIn } from "../../../styles/globalStyledComponents";
 
 export const Container = styled.div`

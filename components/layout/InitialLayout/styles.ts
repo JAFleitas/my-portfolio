@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MOBILE, TABLET } from "../../../helpers/constants";
+import { MOBILE, TABLET } from "../../../utils/constants";
 
 export const Container = styled.div`
   display: flex;
