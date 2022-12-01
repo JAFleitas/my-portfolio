@@ -86,8 +86,10 @@ const ImageContainer = styled.article`
   @media ${MOBILE} {
     width: 100%;
     height: 260px;
+    opacity: 1;
+    transform: scale(1);
     :hover {
-      opacity: 0.57;
+      opacity: 1;
       transform: scale(1);
     }
   }
@@ -118,6 +120,12 @@ const ContainerDescription = styled.article`
     align-items: center;
     p {
       text-align: justify;
+      margin-top: 0;
+      font-size: medium;
+    }
+    h2 {
+      font-size: large;
+      margin-top: 0;
     }
   }
 `;
