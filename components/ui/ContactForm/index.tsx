@@ -159,7 +159,7 @@ export const ContactForm = () => {
       <Divider role="presentation">Redes sociales</Divider>
       <SocialNetworkContainer>
         <Linkedin fill="#0a66c2" fillHover="#0a66da" />
-        <GitHubIcon />
+        <GitHubIcon href={"https://github.com/JAFleitas"}/>
         <Twitter fill="#0f89e3" fillHover="#33c5ff" />
       </SocialNetworkContainer>
     </section>
