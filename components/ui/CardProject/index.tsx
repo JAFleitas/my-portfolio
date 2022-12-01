@@ -3,16 +3,30 @@ import { MOBILE, TABLET } from "../../../helpers/constants";
 import { GitHubIcon } from "../icons/Github";
 import { PrimaryButton } from "../PrimaryButton";
 import Image from "next/image";
+import { FC } from "react";
 
-export const CardProject = () => {
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  repoLink: string;
+  demoLink: string;
+}
+export const CardProject: FC<Props> = ({
+  title,
+  description,
+  repoLink,
+  demoLink,
+  image,
+}) => {
   return (
     <Container>
       <ImageContainer>
         <Image
           objectFit="cover"
-          objectPosition="10% 100%"
+          objectPosition="0% 100%"
           alt="image project"
-          src={"/assets/projects/pokemon-page.jpeg"}
+          src={image}
           layout="fill"
           style={{
             borderRadius: "8px",
@@ -22,25 +36,16 @@ export const CardProject = () => {
         />
       </ImageContainer>
       <ContainerDescription>
-        <h2>POKEDEX PAGE</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, facere
-          ad. Nulla officiis ipsum delectus nesciunt. Aliquam voluptate
-          laboriosam quas pariatur temporibus voluptatibus, dolores sequi id hic
-          placeat nobis vero?
-        </p>
+        <h2>{title}</h2>
+        <p>{description}</p>
         <ContainerButton>
           <PrimaryButton>
-            <a
-              href="https://pokemon-static-nextjs-six.vercel.app/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+            <a href={demoLink} target="_blank" rel="noreferrer noopener">
               Ver sitio web
             </a>
           </PrimaryButton>
           <div style={{ paddingTop: "6px", boxSizing: "border-box" }}>
-            <GitHubIcon href="https://github.com/JAFleitas/pokemon-static-nextjs" />
+            <GitHubIcon href={repoLink} />
           </div>
         </ContainerButton>
       </ContainerDescription>
@@ -69,6 +74,10 @@ const ImageContainer = styled.article`
   border: none;
   border-radius: 8px;
   box-shadow: 0px 0px 32px -11px #0f0f0f83;
+  @media ${MOBILE} {
+    width: 100%;
+    height: 60%;
+  }
 `;
 
 const ContainerDescription = styled.article`
