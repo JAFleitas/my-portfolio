@@ -59,26 +59,6 @@ export const ContactForm = () => {
         <form onSubmit={handleSubmit(sendEmail)} noValidate>
           <Box sx={{ width: 350, padding: "10px 20px" }}>
             <Grid container spacing={4}>
-              {/*   <Grid item xs={12}>
-                <TextField
-                  autoFocus
-                  color="secondary"
-                  type="text"
-                  label="Nombre"
-                  fullWidth
-                  inputRef={(input) => input?.focus()}
-
-                  {...register("password", {
-                    required: "Campo requerido.",
-                    minLength: {
-                      value: 6,
-                      message: "Password requires min 6 characters",
-                    },
-                  })}
-                  error={!!errors.password}
-                  helperText={errors.password?.message}
-                />
-              </Grid> */}
               <Grid item xs={12}>
                 <TextField
                   type="email"
@@ -159,7 +139,7 @@ export const ContactForm = () => {
       <Divider role="presentation">Redes sociales</Divider>
       <SocialNetworkContainer>
         <Linkedin fill="#0a66c2" fillHover="#0a66da" />
-        <GitHubIcon href={"https://github.com/JAFleitas"}/>
+        <GitHubIcon href={"https://github.com/JAFleitas"} />
         <Twitter fill="#0f89e3" fillHover="#33c5ff" />
       </SocialNetworkContainer>
     </section>
