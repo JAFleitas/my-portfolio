@@ -31,8 +31,7 @@ export const Navbar = () => {
   const showContactButton = () => {
     if (window.scrollY >= 800 && window.scrollY < 7240) {
       setIsVisible(true);
-    }
-    if (
+    } else if (
       window.innerWidth < 750 &&
       window.scrollY >= 800 &&
       window.scrollY < 8340
