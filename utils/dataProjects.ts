@@ -20,7 +20,7 @@ export const dataProjects: IProject[] = [
     description:
       "SPA relacionada al alquiler de viviendas, propiedades o habitaciones en el ámbito turístico. Se puede reservar Habitaciones, pagar , cancelar y calificar la compra.",
     repoLink: "https://github.com/JAFleitas/room-rental-app",
-    demoLink: "https://room-rental-app.vercel.app/home",
+    demoLink: "https://room-rental-app.vercel.app/",
     image: "/assets/projects/room-rental-app.jpeg",
   },
   {
