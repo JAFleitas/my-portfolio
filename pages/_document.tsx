@@ -51,6 +51,7 @@ export default class MyDocument extends Document {
             name="og:image"
             content={`${origin}/assets/linkedinbanner.jpg`}
           />
+          <meta name="author" content="Gonzalo Fleitas"></meta>
         </Head>
         <body>
           <Main />
