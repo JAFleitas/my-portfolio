@@ -47,10 +47,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          <meta
-            name="og:image"
-            content={`${origin}/assets/linkedinbanner.jpg`}
-          />
+
           <meta name="author" content="Gonzalo Fleitas"></meta>
         </Head>
         <body>
