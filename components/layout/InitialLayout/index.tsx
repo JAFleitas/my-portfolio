@@ -15,7 +15,7 @@ export const InitialLayout: FC<PropsWithChildren> = ({ children }) => {
 
         <meta name="description" content={DESCRIPTION} />
         <meta name="og:title" content="Portfolio - Gonzalo Fleitas" />
-        <meta name="og:image" content={`${origin}/assets/linkedinbanner.jpg`} />
+        <meta name="image" property="og:image" content={`${origin}/assets/linkedinbanner.jpg`} />
         <meta name="og:description" content={DESCRIPTION} />
       </Head>
       <Container>
