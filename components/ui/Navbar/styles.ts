@@ -19,7 +19,6 @@ export const ContainerNav = styled.ul`
   gap: 24px;
 
   @media ${TABLET} {
-    display: none;
   }
   @media ${MOBILE} {
     display: none;
@@ -90,9 +89,7 @@ export const NavMobile = styled.button`
   @media ${MOBILE} {
     display: block;
   }
-  @media ${TABLET} {
-    display: block;
-  }
+
   svg {
     font-size: 2rem;
   }

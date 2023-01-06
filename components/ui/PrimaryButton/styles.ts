@@ -7,7 +7,6 @@ export const ButtonStyled = styled.button`
 
   border: none;
   border-radius: 12px;
-  border-left: 1px solid #333;
 
   background-color: transparent;
   color: #ccc;
@@ -18,11 +17,6 @@ export const ButtonStyled = styled.button`
   padding: 6px;
   transition: all 0.3s ease;
   cursor: pointer;
-
-  :hover {
-    color: #eee;
-    border-left: 1px solid #555;
-  }
 
   @media ${MOBILE} {
     width: 100%;

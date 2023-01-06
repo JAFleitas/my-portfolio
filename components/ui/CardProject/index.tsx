@@ -39,11 +39,9 @@ export const CardProject: FC<Props> = ({
         <h2>{title}</h2>
         <p>{description}</p>
         <ContainerButton>
-          <PrimaryButton>
-            <a href={demoLink} target="_blank" rel="noreferrer noopener">
-              Ver sitio web
-            </a>
-          </PrimaryButton>
+          <a href={demoLink} target="_blank" rel="noreferrer noopener">
+            <PrimaryButton>Ver sitio web</PrimaryButton>
+          </a>
           <div style={{ paddingTop: "6px", boxSizing: "border-box" }}>
             <GitHubIcon href={repoLink} />
           </div>
@@ -136,4 +134,7 @@ const ContainerButton = styled.article`
   align-items: center;
   padding: 20px 0px;
   gap: 30px;
+  @media ${MOBILE} {
+    justify-content: space-between;
+  }
 `;
